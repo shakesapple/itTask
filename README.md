@@ -6,5 +6,7 @@ ngnix web
 dfeadfasdfge sdf
 +-----+
 |     |
-|    |
+|     |
 +-----+
+
+Creating a ner branch is quick AND simple
