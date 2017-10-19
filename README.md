@@ -16,11 +16,11 @@ branch test11245
 efetefd
 test conficted feffe 2222
 fixed 12314 fef
+dev2
 ==================================================
 
 this is Task list
 1, task1---task1.html
-<<<<<<< HEAD
 2,2324242
 3,f33333333
 =======
