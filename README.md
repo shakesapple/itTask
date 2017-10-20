@@ -21,7 +21,6 @@ feature1
 
 this is Task list
 1, task1---task1.html
-<<<<<<< HEAD
 2,2324242
 3,f33333333
 =======
