@@ -2,7 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <!--在网页的<head>中增加以上这句话，可以让网页的宽度自动适应手机屏幕的宽度。
+
+其中：
+
+width=device-width ：表示宽度是设备屏幕的宽度
+
+initial-scale=1.0：表示初始的缩放比例
+
+minimum-scale=0.5：表示最小的缩放比例
+
+maximum-scale=2.0：表示最大的缩放比例
+
+user-scalable=yes：表示用户是否可以调整缩放比例-->
+
+
     <title>task3_魔镜</title>
     <style type="text/css">
         p{
@@ -12,19 +27,19 @@
         }
         .background{
             background-color: #68cdd5;
-                }
+                    }
          .banner{
 
              margin-bottom: 3em;
          }
-   /*img 为行内元素，在其父元素设置text-align:center 即可实现居中*/
+   /*img 为行内元素，margin 无效。在其父元素设置text-align:center 即可实现居中*/
         .title{
             text-align: center;
             margin-bottom: 4em;
         }
          .content{
              width:80%;
-             margin:0  auto 9em auto;
+             margin:0  auto 9em auto; /*定宽块状元素水平居中*/
          }
          .logo_1{
              float:left;
@@ -42,8 +57,8 @@
         }
     </style>
 </head>
-<body class="background"  >
-<div >
+<body class="background">
+
     <div class="banner"  >
         <img  src="image\logo-4.png">
     </div>
@@ -54,7 +69,7 @@
     <div class="content"  >
         <p>葡萄藤轻游戏专注于桌游领域，提供在线杀人游戏，捉鬼，炸狼堡等多种聚会游戏，以下线下聚会桌游道具。</p>
     </div>
-    <div class="footer"  >
+    <div class="footer"  > <!--logo_1 和logo_2 的外层框，由于子元素有float，本层框已破环，但布局不会破环，仍可以运用此框进行对齐等操作 -->
         <div class="logo_1">
             <img src="image\logo-1.png"   />
             <p  >290560933</p>
@@ -64,6 +79,6 @@
             <p  >BJPTTeng</p>
         </div>
     </div>
-</div>
+
 </body>
 </html>
